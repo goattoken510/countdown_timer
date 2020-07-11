@@ -1,0 +1,35 @@
+@import './rset.scss';
+$unitFontSize: 16px;
+$marginRight: 5px;
+.p-countdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  &__num {
+    font-size: 24px;
+  }
+  &__utit {
+    font-size: $unitFontSize;
+    margin-right: $marginRight;
+  }
+}
+.p-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  &__label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-right: $marginRight;
+  }
+  &__uitn {
+    font-size: $unitFontSize;
+  }
+  &__day {
+    width: 4em;
+  }
+  &__num {
+    width: 3em;
+  }
+}

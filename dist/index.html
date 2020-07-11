@@ -7,20 +7,39 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <p>
-    <span class="js-min">03</span>
-    <span>分</span>
-    <span class="js-sec">00</span>
-    <span>秒</span>
-    <span class="js-point">00</span>
+  <p class="p-countdown">
+    <span class="p-countdown__num js-day">000</span>
+    <span class="p-countdown__utit">日</span>
+    <span class="p-countdown__num js-hour">00</span>
+    <span class="p-countdown__utit">時間</span>
+    <span class="p-countdown__num js-min">03</span>
+    <span class="p-countdown__utit">分</span>
+    <span class="p-countdown__num js-sec">00</span>
+    <span class="p-countdown__utit">秒</span>
+    <span class="p-countdown__num js-point">00</span>
   </p>
-  <div>
-    <label>
-      <input type="number" name="second" value="180" min="1">
-      <span>秒</span>
+  <div class="p-input">
+    <label class="p-input__label">
+      <input type="number" name="day" value="0" min="0" class="p-input__day">
+      <span class="p-input__uitn">日</span>
     </label>
-    <input type="button" value="スタート" class="js-start">
-    <small class="js-alert" style="color: red;"></small>
+    <label class="p-input__label">
+      <input type="number" name="hour" value="0" min="0" max="23" class="p-input__num">
+      <span class="p-input__uitn">時間</span>
+    </label>
+    <label class="p-input__label">
+      <input type="number" name="min" value="3" min="0" max="59" class="p-input__num">
+      <span class="p-input__uitn">分</span>
+    </label>
+    <label class="p-input__label">
+      <input type="number" name="sec" value="0" min="0" max="59" class="p-input__num">
+      <span class="p-input__uitn">秒</span>
+    </label>
+    <label class="p-input__label">
+      <input type="number" name="point" value="0" min="0" max="99" class="p-input__num">
+    </label>
+    <input type="button" value="スタート" class="js-start p-start">
   </div>
+  <small class="js-alert p-alert"></small>
 </body>
 </html>
